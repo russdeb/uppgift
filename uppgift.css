@@ -5,10 +5,10 @@ body {
 }
 
 header {
-    display: flex;
     width: 100%;
     height: 70px;
-background-color:crimson;
+    background-color:crimson;
+    text-align: center;
 }
 
 /*titeln*/
@@ -96,6 +96,8 @@ span:nth-of-type(2){
     margin: 100px auto;
     width: 100%;
     display: flex;
+    position: relative;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     overflow-x: auto;
@@ -107,15 +109,14 @@ section-cards::-webkit-scrollbar::-webkit-scrollbar {
 
 .card {
     width: 20%;
-    max-height: 400px;
+    height: 350px;
     background-color: crimson;
     border-radius: 10px;
     padding: 5px 5px;
-    margin: 0px;
+    margin: 0px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     transition: 0.5s;
 }
 
