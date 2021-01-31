@@ -2,8 +2,8 @@
 var span = document.getElementsByTagName('span');
 var card = document.getElementsByClassName('card');
 var l = 0;
+window.onload = function(){
 span[1].onclick = ()=>{
-    console.log("Hai appena cliccato!");
     l++;
     for(var i of card)
     {
@@ -16,7 +16,6 @@ span[1].onclick = ()=>{
     }
 }
 span[0].onclick = ()=>{
-    console.log("Hai appena cliccato!");
     l--;
     for(var i of card)
     {
@@ -26,4 +25,5 @@ span[0].onclick = ()=>{
         if (l==3) {i.style.left = "-2220px";}
         if (l<0) {l=0;}
     }
+}
 }
