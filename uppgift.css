@@ -103,17 +103,19 @@ span:nth-of-type(2){
     overflow-x: auto;
 }
 
-section-cards::-webkit-scrollbar::-webkit-scrollbar {
+section-cards::-webkit-scrollbar{
     visibility: hidden;
 }
 
 .card {
-    width: 20%;
-    height: 350px;
+    min-width: 350px;
+    position: relative;
+    left:0;
+    min-height: 350px;
     background-color: crimson;
     border-radius: 10px;
     padding: 5px 5px;
-    margin: 0px auto;
+    margin: 10px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
